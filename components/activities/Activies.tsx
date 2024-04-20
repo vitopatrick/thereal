@@ -1,28 +1,28 @@
 const activities = [
-  // {
-  //   type: "withdrawal",
-  //   remark: "First withdrawal",
-  //   date: new Date().toLocaleDateString(),
-  //   approved: false,
-  // },
-  // {
-  //   type: "deposit",
-  //   remark: "Testing withdrawals for me kids",
-  //   date: new Date().toLocaleDateString(),
-  //   approved: false,
-  // },
-  // {
-  //   type: "withdrawal",
-  //   remark: "Transfer to my second account",
-  //   date: new Date().toLocaleDateString(),
-  //   approved: false,
-  // },
-  // {
-  //   type: "withdrawal",
-  //   remark: "normal withdrawal",
-  //   date: new Date().toLocaleDateString(),
-  //   approved: true,
-  // },
+  {
+    type: "withdrawal",
+    remark: "First withdrawal",
+    date: new Date().toLocaleDateString(),
+    approved: false,
+  },
+  {
+    type: "deposit",
+    remark: "Testing withdrawals for me kids",
+    date: new Date().toLocaleDateString(),
+    approved: false,
+  },
+  {
+    type: "withdrawal",
+    remark: "Transfer to my second account",
+    date: new Date().toLocaleDateString(),
+    approved: false,
+  },
+  {
+    type: "withdrawal",
+    remark: "normal withdrawal",
+    date: new Date().toLocaleDateString(),
+    approved: true,
+  },
 ];
 
 export default function Activies() {
