@@ -80,7 +80,7 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
     }
 
     // check if the amount is greater than that in Main account
-    if (amount > state?.MainAccount) {
+    if (amount > state?.balance) {
       return toast.error("Please Fund Account");
     }
     try {

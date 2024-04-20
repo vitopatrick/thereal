@@ -20,12 +20,12 @@ const TradingModal = ({ hide, setHide, tradingFunction }: any) => {
         position: "bottom-center",
       });
     }
-    if (!user?.tradingPassword) {
+    if (!user?.trading_password) {
       return toast.error("Please create a secure password", {
         position: "bottom-center",
       });
     }
-    if (tradingPassword != user?.tradingPassword) {
+    if (tradingPassword != user?.trading_password) {
       return toast.error("password Incorrect", {
         position: "bottom-center",
       });

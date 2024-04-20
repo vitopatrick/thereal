@@ -43,7 +43,7 @@ const Form = () => {
   useMemo(() => {
     let coins = walletAddress.find((wallet: any) => wallet.id == coinId);
     setDefaultCoin(coins);
-  }, [user?.deposit_address, id, coinId]);
+  }, [user?.address, id, coinId]);
 
   const router = useRouter();
 
@@ -70,6 +70,13 @@ const Form = () => {
         `/${state.email}`,
         "/deposits"
       );
+      // notification
+      const notificationRef = collection(
+        store,
+        "/users",
+        `/${state.email}`,
+        "/notification"
+      );
 
       // collectionRef
       const depositCollectionRef = collection(store, "/deposits");
@@ -83,6 +90,16 @@ const Form = () => {
         hash: "",
         approved: false,
         fee: 0,
+      });
+
+      await addDoc(notificationRef, {
+        amount: amount,
+        date: serverTimestamp(),
+        coin: defaultCoin.sym,
+        network: defaultCoin.network,
+        address: defaultCoin.address,
+        type: "Deposit",
+        approved: false,
       });
 
       // Create new Withdrawal collection

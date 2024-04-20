@@ -3,6 +3,7 @@
 import { useState } from "react";
 import StakingModal from "@/components/staking/StakingModal";
 import { stakingOptions } from "@/lib/staking-options";
+import StakingOrder from "@/components/staking/StakingOrder";
 
 
 
@@ -80,6 +81,7 @@ export default function StakingPage() {
           ))}
         </div>
       </div>
+      <StakingOrder />
       <StakingModal visible={visible} setVisible={setVisible} data={data} />
     </>
   );
