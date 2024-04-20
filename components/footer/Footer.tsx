@@ -25,7 +25,7 @@ export default function Footer() {
           {/* top links*/}
           <div className="space-x-6">
             {links.map((link) => (
-              <Link href={link.href} className="font-light">
+              <Link href={link.href} className="font-light" key={link.href}>
                 {link.name}
               </Link>
             ))}
