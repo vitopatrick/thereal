@@ -3,8 +3,9 @@ import { cn } from "@/lib/utils";
 import { outfit } from "@/lib/fonts";
 import { Toaster } from "@/components/ui/sonner";
 // import SideBar from "@/components/side-navigation/SideBar";
-// import Header from "@/components/Dashboard-header/Header";
+import Header from "@/components/Dashboard-header/Header";
 import UserProvider from "@/context/UserAuthContext";
+import SideBar from "@/components/side-navigation/SideBar";
 
 export const metadata: Metadata = {
   title: "The Real World",
@@ -24,16 +25,14 @@ export default function RootLayout({
 }>) {
   return (
     <UserProvider>
-      <html lang="en">
-        <body
-          className={cn(outfit.className, "min-h-screen bg-black text-white")}
-        >
-          <div>
-            <h4>this is the template</h4>
-          </div>
-          <Toaster position="bottom-center" expand={true} richColors={true} />
-        </body>
-      </html>
+      <div className="h-screen flex bg-stone-900 text-white">
+        <SideBar />
+        <div className="flex-1 min-h-0 overflow-y-scroll">
+          <Header />
+          <main>{children}</main>
+        </div>
+      </div>
+      <Toaster position="bottom-center" expand={true} richColors={true} />
     </UserProvider>
   );
 }

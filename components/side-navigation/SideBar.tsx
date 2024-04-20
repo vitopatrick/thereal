@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Activity,
   ArrowRightLeft,
@@ -8,10 +10,8 @@ import {
   LogOut,
   Nfc,
   Wallet,
-  icons,
 } from "lucide-react";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 const links = [
   {
@@ -66,18 +66,19 @@ const links = [
 
 export default function SideBar() {
   return (
-    <aside className="w-[220px] bg-stone-800 hidden lg:block">
+    <aside className="w-[220px] bg-stone-800 hidden text-white lg:block">
       <div className="flex flex-col gap-4">
-        {links.map((link) => (
-          <Link
-            href={link.link}
-            key={link.id}
-            className="flex gap-2 p-3 hover:bg-stone-950 transition-all ease-in"
-          >
-            {link.icon}
-            {link.name}
-          </Link>
-        ))}
+        {links &&
+          links.map((link) => (
+            <Link
+              href={link.link}
+              key={link.id}
+              className="flex gap-2 p-3 hover:bg-stone-950 transition-all ease-in"
+            >
+              {link.icon}
+              {link.name}
+            </Link>
+          ))}
         <Link
           href="#"
           className="flex gap-2 p-3 hover:bg-stone-950 transition-all ease-in"
