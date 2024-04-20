@@ -6,6 +6,7 @@ import React from "react";
 
 export default function Summary() {
   const { userState }: any = useFetchUser();
+  let wallets = userState?.wallets;
 
   return (
     <div className="py-4 space-y-2">
@@ -28,31 +29,32 @@ export default function Summary() {
       <h3 className="text-xl lg:text-2xl mt-8">Wallets</h3>
       {/* container */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-        {userState && (
+        {wallets && (
           <>
             {/* bitcoin */}
             <div className="bg-stone-800 p-3 rounded-xl">
               <h3>Bitcoin</h3>
-              <p>{userState.wallets.btc}</p>
+              <p>{wallets?.btc}</p>
             </div>
             {/* Ethereum */}
             <div className="bg-stone-800 rounded-xl p-4">
               <h3>Ethereum</h3>
-              <p>{userState.wallets.eth}</p>
+              <p>{wallets?.eth}</p>
             </div>
             {/* Tron */}
             <div className="bg-stone-800 rounded-xl p-4">
               <h3>Tron</h3>
-              <p>{userState.wallets.trx}</p>
+              <p>{wallets?.trx}</p>
             </div>
             {/* Solana */}
             <div className="bg-stone-800 rounded-xl p-4">
               <h3>Solana</h3>
-              <p> {userState.wallets.sol}</p>
+              <p> {wallets?.sol}</p>
             </div>
           </>
         )}
       </div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3"></div>
     </div>
   );
 }

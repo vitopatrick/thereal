@@ -20,24 +20,24 @@ const links = [
     link: "/dashboard",
     icon: <Activity />,
   },
-  {
-    id: 2,
-    name: "My Wallet",
-    link: "/wallet",
-    icon: <Wallet />,
-  },
-  {
-    id: 3,
-    name: "Settings",
-    link: "/settings",
-    icon: <Cog />,
-  },
-  {
-    id: 4,
-    name: "Trading",
-    link: "/trade",
-    icon: <CandlestickChart />,
-  },
+  // {
+  //   id: 2,
+  //   name: "My Wallet",
+  //   link: "/wallet",
+  //   icon: <Wallet />,
+  // },
+  // {
+  //   id: 3,
+  //   name: "Settings",
+  //   link: "/settings",
+  //   icon: <Cog />,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Trading",
+  //   link: "/trade",
+  //   icon: <CandlestickChart />,
+  // },
   {
     id: 5,
     name: "Staking",

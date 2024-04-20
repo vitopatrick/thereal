@@ -82,6 +82,16 @@ export default function RegisterForm() {
         duration: 900,
       });
 
+      await fetch("/api/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: values.email,
+        }),
+      });
+
       // re route to the dashboard
       router.push("/dashboard");
     } catch (error: any) {

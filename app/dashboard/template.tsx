@@ -24,16 +24,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <UserProvider>
-      <div className="h-screen flex bg-stone-900 text-white">
-        <SideBar />
-        <div className="flex-1 min-h-0 overflow-y-scroll">
-          <Header />
-          <main>{children}</main>
+    <>
+      <UserProvider>
+        <div className="h-screen flex bg-stone-900 text-white">
+          <SideBar />
+          <div className="flex-1 min-h-0 overflow-y-scroll">
+            <Header />
+            <main>{children}</main>
+          </div>
         </div>
-      </div>
-      <Toaster position="bottom-center" expand={true} richColors={true} />
-    </UserProvider>
+        <Toaster position="bottom-center" expand={true} richColors={true} />
+      </UserProvider>
+    </>
   );
 }
 
