@@ -53,13 +53,13 @@ const links = [
   {
     id: 7,
     name: "Payment",
-    link: "/deposit",
+    link: "/dashboard/deposit",
     icon: <Nfc />,
   },
   {
     id: 8,
     name: "Withdraw",
-    link: "/withdraw",
+    link: "/dashboard/withdraw",
     icon: <ArrowRightLeft />,
   },
 ];

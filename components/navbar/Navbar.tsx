@@ -7,22 +7,22 @@ import React, { useState } from "react";
 const links = [
   {
     id: 1,
-    url: "/philosophy",
+    url: "#philosophy",
     title: "Philosophy",
   },
   {
     id: 2,
-    url: "/skills",
+    url: "#skills",
     title: "Skills",
   },
   {
     id: 3,
-    url: "/access",
+    url: "#",
     title: "Access",
   },
   {
     id: 4,
-    url: "/results",
+    url: "#results",
     title: "Results",
   },
 ];

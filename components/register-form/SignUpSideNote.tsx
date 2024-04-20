@@ -1,13 +1,12 @@
 import React from 'react'
 
 const sidenotes = [
-    'Live calls and AMAs with Experts',
-    "24/7 Support and on-demand guidance",
-    'Over 18 Modern Wealth Creation Methods',
-    '7+ Distinct Campuses',
-    '1000+ Professionally made Video lessons',
-    'All for $49.99 with no additional fees.'
-]
+  "Live calls and AMAs with Experts",
+  "24/7 Support and on-demand guidance",
+  "Over 18 Modern Wealth Creation Methods",
+  "7+ Distinct Campuses",
+  "1000+ Professionally made Video lessons",
+];
 
 export default function SignUpSideNote() {
   return (

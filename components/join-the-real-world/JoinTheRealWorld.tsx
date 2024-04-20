@@ -8,15 +8,15 @@ export default function JoinTheRealWorld() {
       <div className="w-11/12 mx-auto flex flex-col justify-center items-center p-4">
         <div className="flex justify-center gap-4">
           <div className=" space-y-4">
-            <h3 className="text-3xl lg:text-6xl font-extrabold ml-6">
+            <h3 className="text-4xl lg:text-6xl font-extrabold lg:ml-6">
               Join <span className="text-orange-400">The Real World</span>
             </h3>
-            <p className="text-xl lg:text-3xl">
+            <p className="text-2xl lg:text-3xl">
               Money making is an addicting formula when you learn <br /> from
               our professionally trained millionaire professors.
             </p>
           </div>
-          <div className="w-[10%]">
+          <div className="w-[10%] hidden lg:block">
             <img
               src="https://therealworldenrol.com/images/arrow-1.png"
               alt="the real world"
@@ -24,7 +24,7 @@ export default function JoinTheRealWorld() {
           </div>
         </div>
         {/* image */}
-        <div className="overflow-hidden relative h-0 my-3">
+        <div className="my-8">
           <iframe
             width="957"
             height="551"

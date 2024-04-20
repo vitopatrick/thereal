@@ -2,6 +2,12 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { useFetchUser } from "../../hooks/useFetchUser";
+import { REGEXP_ONLY_DIGITS } from "input-otp";
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+} from "@/components/ui/input-otp";
 
 const TradingModal = ({ hide, setHide, tradingFunction }: any) => {
   const [tradingPassword, setTradingPassword] = useState<string>("");
@@ -51,7 +57,7 @@ const TradingModal = ({ hide, setHide, tradingFunction }: any) => {
         }
       >
         {/* main div that will be center */}
-        <div className="w-[80%] text-white font-main md:w-[40%] mx-auto my-12 bg-bg rounded-md relative shadow-md p-4">
+        <div className="w-[80%] text-white font-main md:w-[40%] mx-auto my-12 bg-stone-800 rounded-md relative shadow-md p-4">
           <div className="absolute top-0 right-0">
             <X
               className="text-white text-4xl mx-4 mt-6 cursor-pointer"
@@ -66,12 +72,24 @@ const TradingModal = ({ hide, setHide, tradingFunction }: any) => {
           {/* form  */}
           <form className="my-3">
             <div className="flex items-center justify-center">
-              {/* input the trading password */}
+              <InputOTP
+                maxLength={4}
+                value={tradingPassword}
+                onChange={(value) => setTradingPassword(value)}
+                pattern={REGEXP_ONLY_DIGITS}
+              >
+                <InputOTPGroup>
+                  <InputOTPSlot index={0} />
+                  <InputOTPSlot index={1} />
+                  <InputOTPSlot index={2} />
+                  <InputOTPSlot index={3} />
+                </InputOTPGroup>
+              </InputOTP>
             </div>
             <button
               onClick={modalFunction}
               type="submit"
-              className="inline-block w-full mt-6 font-sec py-2 bg-teal-400 text-white rounded"
+              className="inline-block w-full mt-6 font-sec py-2 bg-orange-600 text-white rounded"
             >
               Submit
             </button>

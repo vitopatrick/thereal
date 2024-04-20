@@ -15,7 +15,6 @@ import { useFetchUser } from "../../hooks/useFetchUser";
 import { formatCurrency } from "../../lib/format";
 import { toast } from "sonner";
 import TradingModal from "../trading-modal/TradingModal";
-import Link from "next/link";
 import { UserContext } from "../../context/UserAuthContext";
 
 interface ModalProps {
@@ -156,7 +155,7 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
         }
       >
         {/* main div that will be center */}
-        <div className="w-[90%] md:w-[60%] mx-auto relative my-3 bg-neutral-100 font-main rounded-lg shadow p-4 md:p-8">
+        <div className="w-[90%] md:w-[60%] mx-auto relative my-3 bg-stone-900 font-main rounded-lg shadow p-4 md:p-8">
           <div className="absolute top-0 right-0 p-4">
             <X onClick={() => setVisible(false)} />
           </div>
@@ -288,23 +287,10 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
               {/* submit button */}
               <button
                 onClick={openModal}
-                className="bg-teal-600 p-3 w-full rounded-full my-3 text-white capitalize font-bold"
+                className="bg-orange-600 p-3 w-full rounded-full my-3 text-white capitalize"
               >
                 subscribe
               </button>
-              {/* Terms and agreement */}
-              <div className="flex items-center gap-2">
-                <p className="text-sm capitalize">
-                  I have read and agree to the{" "}
-                  <Link
-                    href="/mining-agreement"
-                    className="text-teal-600 font-semibold"
-                  >
-                    {" "}
-                    cryptocurrency mining agreement
-                  </Link>
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -8,6 +8,7 @@ export const UserContext = createContext<{} | null>({});
 
 const UserProvider = ({ children }: ReactNode | any) => {
   const [user, setUser] = useState({});
+   const [coin, setCoin] = useState("bitcoin");
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -20,7 +21,9 @@ const UserProvider = ({ children }: ReactNode | any) => {
   }, []);
 
   return (
-    <UserContext.Provider value={{ user }}>{children}</UserContext.Provider>
+    <UserContext.Provider value={{ user, coin, setCoin }}>
+      {children}
+    </UserContext.Provider>
   );
 };
 
