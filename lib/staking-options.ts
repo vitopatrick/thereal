@@ -1,0 +1,32 @@
+export const stakingOptions = [
+  {
+    id: 1,
+    range: "$5,000 - $100,000",
+    duration: "14",
+    min: 5000,
+    plan: "USDT",
+    network: "TRC-20",
+    image: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
+    roi: "60%",
+  },
+  {
+    id: 2,
+    range: "$7,500 - $80,000",
+    duration: "30",
+    min: 7500,
+    plan: "TON",
+    network: "ton",
+    image: "https://ton.org/download/ton_symbol.png",
+    roi: "100%",
+  },
+  {
+    id: 3,
+    range: "$5000 - $150,000",
+    duration: "60",
+    min: 5000,
+    plan: "TRON",
+    network: "TRC-20",
+    image: "https://cryptologos.cc/logos/tron-trx-logo.png?v=031",
+    roi: "150%",
+  },
+];
