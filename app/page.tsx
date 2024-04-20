@@ -1,3 +1,5 @@
+"use client";
+
 import RealWorldFeatures from "@/components/FeaturesOfRealWorld/RealWorldFeatures";
 import GetRealResults from "@/components/GetRealResults/GetRealResults";
 import TeachingPhilosophy from "@/components/TeachingPhilosophy/TeachingPhilosophy";
@@ -7,8 +9,10 @@ import Faq from "@/components/faq/Faq";
 import Footer from "@/components/footer/Footer";
 import JoinTheRealWorld from "@/components/join-the-real-world/JoinTheRealWorld";
 import Navbar from "@/components/navbar/Navbar";
+import { useChatSupport } from "@/hooks/useChatSupport";
 
 export default function HomePage() {
+  useChatSupport();
   return (
     <div className="bg-stone-900 text-neutral-50">
       {/* Navbar */}
