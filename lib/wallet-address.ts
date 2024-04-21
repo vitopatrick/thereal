@@ -35,7 +35,7 @@ export const addresses = [
     address: "TN6ksTXUEecZgY38oL39CHFzgVKwsTrf9i",
     network: "TRC20",
     img: "/usdt-trc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const addresses = [
     address: "bc1qpe6vxdycp9rqc5cwqnxya9wukpsjd5aw5sum5f",
     network: "Bitcoin",
     img: "/bitcoin-bar.png",
-    logo: "./btc.png",
+    logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
   },
   {
     id: 6,
@@ -99,7 +99,7 @@ export const addresses = [
     address: "0x32a5D344Ca86aF9d99B589dE53D272722515C8cC",
     network: "ERC20",
     img: "/usdt-erc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 
   {
@@ -109,7 +109,7 @@ export const addresses = [
     address: "0xBc6CeeA666F70240CbEdE25BB9F1Bd5102173eB2",
     network: "BEP20",
     img: "/usdt-bep202.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 ];
 
@@ -150,7 +150,7 @@ export const addressTwo = [
     address: "TUUVKwpQ2geSowLUhMx1rxCACeoUihb51H",
     network: "TRC20",
     img: "/usdt2_trc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
   {
     id: 5,
@@ -159,7 +159,7 @@ export const addressTwo = [
     address: "bc1qfdhuwdznec6nv05cfzrnzxyp232uj5lm2gdcms",
     network: "Bitcoin",
     img: "/btc2.png",
-    logo: "./btc.png",
+    logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
   },
   {
     id: 6,
@@ -214,7 +214,7 @@ export const addressTwo = [
     address: "0xBc6CeeA666F70240CbEdE25BB9F1Bd5102173eB2",
     network: "ERC20",
     img: "/usdt2_erc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 
   {
@@ -224,7 +224,7 @@ export const addressTwo = [
     address: "0x5056DF29C6429F81A5A27A6Fc26Dea1D9bfA6886",
     network: "BEP20",
     img: "/usdt2_bep20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 ];
 
@@ -265,7 +265,7 @@ export const addressThree = [
     address: "TPq8njJLV9g8gzz13ia4HYGwu4fdR8o9D7",
     network: "TRC20",
     img: "/usdt3_trc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
   {
     id: 5,
@@ -274,7 +274,7 @@ export const addressThree = [
     address: "bc1q6tmpwrjfahequz5dht3vp5hlc7x0uzrmtf6unf",
     network: "Bitcoin",
     img: "/btc3.png",
-    logo: "./btc.png",
+    logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
   },
   {
     id: 6,
@@ -329,7 +329,7 @@ export const addressThree = [
     address: "0xF3ecb41D8681c8A6E8b48A4FB6B0681C1bbcc663",
     network: "ERC20",
     img: "/usdt3_erc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 
   {
@@ -339,7 +339,7 @@ export const addressThree = [
     address: "0xF3ecb41D8681c8A6E8b48A4FB6B0681C1bbcc663",
     network: "BEP20",
     img: "/usdt3_bep20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 ];
 
@@ -380,7 +380,7 @@ export const addressFour = [
     address: "TUr3wS9y5YqoNTf2BAXQ9RnJxRQ5nJkMvM",
     network: "TRC20",
     img: "/usdt4_trc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
   {
     id: 5,
@@ -389,7 +389,7 @@ export const addressFour = [
     address: "bc1qgrpscxlpngzh6k68t75w2ydtjkly338gd9ljdl",
     network: "Bitcoin",
     img: "/btc4.png",
-    logo: "./btc.png",
+    logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
   },
   {
     id: 6,
@@ -444,7 +444,7 @@ export const addressFour = [
     address: "0xE25FF703F8becF30a4E88F0d1b46fd16A0e04538",
     network: "ERC20",
     img: "/usdt4_erc20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 
   {
@@ -454,6 +454,6 @@ export const addressFour = [
     address: "0xE25FF703F8becF30a4E88F0d1b46fd16A0e04538",
     network: "BEP20",
     img: "/usdt4_bep20.png",
-    logo: "./usdt.png",
+    logo: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=031",
   },
 ];

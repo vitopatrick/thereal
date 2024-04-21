@@ -9,23 +9,23 @@ import {
 } from "recharts";
 import { useFetchAllCoin } from "@/hooks/useFetchAllCoin";
 import { useContext } from "react";
-import { UserContext } from "@/context/UserAuthContext";
+import { TradingContext } from "@/context/TradingContext";
 import { formatCurrency } from "@/lib/format";
 
-const Chart = () => {
-  const { coin: selected, setCoin }: any = useContext(UserContext);
+const TradingChart = () => {
+  const { selectedCoin, setSelectedCoin }: any = useContext(TradingContext);
 
-  const { coin, loading } = useFetchAllCoin(selected, 30);
+  const { coin, loading } = useFetchAllCoin(selectedCoin, 30);
 
   return (
-    <div className="p-4 bg-stone-900 font-main rounded cols">
+    <div className="p-4 bg-stone-800 font-main rounded col-span-2">
       {/* selector */}
       <div className="mb-8 flex items-center justify-between">
         <div className="bg-stone-500 py-1 px-2 rounded focus:border-paper focus:border-[1px]">
           <select
             className="bg-stone-500 outline-none text-sm font-bold"
-            value={selected}
-            onChange={(e) => setCoin(e.target.value)}
+            value={selectedCoin}
+            onChange={(e) => setSelectedCoin(e.target.value)}
           >
             <option value="bitcoin">BTC/USD</option>
             <option value="tether">USDT</option>
@@ -89,4 +89,4 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return null;
 };
 
-export default Chart;
+export default TradingChart;

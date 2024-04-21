@@ -35,6 +35,7 @@ export const useTransactions = (path: String | any) => {
               amount: parseInt(data.amount),
               date: new Date(data.date.toDate()).toDateString(),
               id: doc.id,
+              profit: data.profit ? data.profit : null,
             });
             setTransactions(transactionsArray);
           });

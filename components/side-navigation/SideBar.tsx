@@ -9,7 +9,6 @@ import {
   Diff,
   LogOut,
   Nfc,
-  Wallet,
 } from "lucide-react";
 import Link from "next/link";
 import { signOut } from "firebase/auth";
@@ -23,24 +22,18 @@ export const links = [
     link: "/dashboard",
     icon: <Activity />,
   },
-  // {
-  //   id: 2,
-  //   name: "My Wallet",
-  //   link: "/wallet",
-  //   icon: <Wallet />,
-  // },
-  // {
-  //   id: 3,
-  //   name: "Settings",
-  //   link: "/settings",
-  //   icon: <Cog />,
-  // },
-  // {
-  //   id: 4,
-  //   name: "Trading",
-  //   link: "/trade",
-  //   icon: <CandlestickChart />,
-  // },
+  {
+    id: 3,
+    name: "User Profile",
+    link: "/dashboard/settings",
+    icon: <Cog />,
+  },
+  {
+    id: 4,
+    name: "Trading",
+    link: "/dashboard/trade",
+    icon: <CandlestickChart />,
+  },
   {
     id: 5,
     name: "Staking",
