@@ -238,7 +238,7 @@ const CoinModal = ({ show, close, coin }: any) => {
             : "hidden"
         }
       >
-        <div className="mx-auto md:w-[50%] w-[90%] bg-bg p-4">
+        <div className="mx-auto md:w-[50%] w-[90%] bg-stone-800 p-4">
           <div className="flex items-center justify-between my-4">
             <h4 className="font-bold underline text-2xl text-white">Coin</h4>
             <X onClick={() => close(false)} color="#fff" />

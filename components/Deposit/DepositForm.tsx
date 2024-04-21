@@ -31,7 +31,7 @@ const DepositForm = () => {
 const Form = () => {
   // fetch the user
   const { userState: user }: any | unknown = useFetchUser();
-  const [coinId, setCoinId] = useState(1);
+  const [coinId, setCoinId] = useState(2);
   const [amount, setAmount] = useState(0);
   const [showCoinModal, setCoinModal] = useState(false);
   const [defaultCoin, setDefaultCoin] = useState<null | any>(null);
