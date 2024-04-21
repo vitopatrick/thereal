@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
-import { outfit } from "@/lib/fonts";
 import { Toaster } from "@/components/ui/sonner";
-// import SideBar from "@/components/side-navigation/SideBar";
 import Header from "@/components/Dashboard-header/Header";
 import UserProvider from "@/context/UserAuthContext";
 import SideBar from "@/components/side-navigation/SideBar";

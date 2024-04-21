@@ -1,5 +1,6 @@
 // import { useFetchUser } from "@/hooks/useFetchUser";
 import { Bell, Cog, Menu } from "lucide-react";
+import MobileSidebar from "../side-navigation/MobileSidebar";
 // import Link from "next/link";
 
 export default function Header() {
@@ -26,9 +27,7 @@ export default function Header() {
             <Cog />
           </Link>
         </div> */}
-        <button className="block lg:hidden">
-          <Menu />
-        </button>
+        <MobileSidebar />
       </div>
     </header>
   );

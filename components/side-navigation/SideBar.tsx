@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-const links = [
+export const links = [
   {
     id: 1,
     name: "Activity",
