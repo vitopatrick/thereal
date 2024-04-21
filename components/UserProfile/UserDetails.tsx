@@ -50,9 +50,7 @@ const UsersDetails = ({
             {loading && <Skeleton className="h-4 w-[250px]" />}
             {!loading && (
               <h1 className="font-medium text-sm md:text-base text-paper">
-                {user?.trading_stage == 0
-                  ? "Just Started"
-                  : user?.trading_stage}
+                {user?.trading_stage == 0 ? "LEVEL 1" : user?.trading_stage}
               </h1>
             )}
           </div>
@@ -71,9 +69,7 @@ const UsersDetails = ({
             </h2>
             {loading && <Skeleton className="h-4 w-[250px]" />}
             {!loading && (
-              <h1 className="font-medium text-sm md:text-base">
-                {user.verfied ? "25 BTC" : "Please Verify account"}
-              </h1>
+              <h1 className="font-medium text-sm md:text-base">{"25 BTC"}</h1>
             )}
           </div>
         </div>
