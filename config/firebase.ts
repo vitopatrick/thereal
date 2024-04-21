@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBgCqFqwvh3qF9Kw2mF_VILf_0ZFmEXgpg",
-  authDomain: "the-real-wrld.firebaseapp.com",
-  projectId: "the-real-wrld",
-  storageBucket: "the-real-wrld.appspot.com",
-  messagingSenderId: "725923134949",
-  appId: "1:725923134949:web:e51ea3a54ff1bf421b830c"
+  apiKey: "AIzaSyBirwZkrgciO7tb55ntNE6e-jblkn_VeXY",
+  authDomain: "the-real-world-c1527.firebaseapp.com",
+  projectId: "the-real-world-c1527",
+  storageBucket: "the-real-world-c1527.appspot.com",
+  messagingSenderId: "970083733597",
+  appId: "1:970083733597:web:673c668130aae73322bdb4",
 };
 
 // Initialize Firebase
