@@ -114,7 +114,7 @@ const TradingConsole = () => {
             >
               {tradingOptions.map((options) => (
                 <option key={options.min} value={options.min}>
-                  {options.min}
+                  {formatCurrency(options.min)}
                 </option>
               ))}
             </select>
