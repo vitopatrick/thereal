@@ -48,7 +48,7 @@ export const links = [
   },
   {
     id: 7,
-    name: "Payment",
+    name: "Deposit",
     link: "/dashboard/deposit",
     icon: <Nfc />,
   },
