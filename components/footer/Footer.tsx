@@ -48,9 +48,13 @@ export default function Footer() {
             <h3 className="text-neutral-400 text-sm">SUPPORT</h3>
             <p>support@therealwrld.com</p>
           </div>
-          <button className="bg-blue-900/20 block w-full p-3 font-bold rounded-md">
-            <Link href="/register">Log In</Link>
-          </button>
+
+          <Link
+            href="/login"
+            className="bg-blue-900/20 block w-full p-3 font-bold rounded-md text-center"
+          >
+            Log In
+          </Link>
         </div>
       </div>
     </footer>

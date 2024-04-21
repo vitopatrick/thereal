@@ -33,11 +33,16 @@ const TradingConsole = () => {
   const router = useRouter();
   const { user: state }: any = useContext(UserContext);
   const { selectedCoin }: any = useContext(TradingContext);
-  // const { userState }: any = useFetchUser();
+  const { userState }: any = useFetchUser();
+
+  console.log(userState);
 
   // function to add Orders
   async function addOrders(e: any) {
     e.preventDefault();
+
+    if (trade[0].min > userState?.balance)
+      return toast.error("insufficent fund,please fund account");
 
     try {
       // create the collection ref
