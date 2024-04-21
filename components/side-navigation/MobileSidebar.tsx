@@ -5,8 +5,22 @@ import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { LogOut, Menu } from "lucide-react";
 import { links } from "./SideBar";
 import Link from "next/link";
+import { signOut } from "firebase/auth";
+import { auth } from "@/config/firebase";
+import { useRouter } from "next/navigation";
 
 export default function MobileSidebar() {
+  const router = useRouter();
+
+  const logOut = (e: any) => {
+    e.preventDefault();
+    signOut(auth);
+
+    localStorage.removeItem("TOKEN");
+
+    router.push("/");
+  };
+
   return (
     <div className="lg:hidden ">
       <Sheet>
@@ -33,6 +47,7 @@ export default function MobileSidebar() {
               <Link
                 href="#"
                 className="flex gap-2 p-3 hover:bg-stone-950 transition-all ease-in"
+                onClick={logOut}
               >
                 <LogOut />
                 Log Out

@@ -12,6 +12,9 @@ import {
   Wallet,
 } from "lucide-react";
 import Link from "next/link";
+import { signOut } from "firebase/auth";
+import { auth } from "@/config/firebase";
+import { useRouter } from "next/navigation";
 
 export const links = [
   {
@@ -65,6 +68,17 @@ export const links = [
 ];
 
 export default function SideBar() {
+  const router = useRouter();
+
+  const logOut = (e: any) => {
+    e.preventDefault();
+    signOut(auth);
+
+    localStorage.removeItem("TOKEN");
+
+    router.push("/");
+  };
+
   return (
     <aside className="w-[220px] bg-stone-800 hidden text-white lg:block">
       <div className="flex flex-col gap-4">
@@ -81,6 +95,7 @@ export default function SideBar() {
           ))}
         <Link
           href="#"
+          onClick={logOut}
           className="flex gap-2 p-3 hover:bg-stone-950 transition-all ease-in"
         >
           <LogOut />
