@@ -40,7 +40,8 @@ const TradingConsole = () => {
   async function addOrders(e: any) {
     e.preventDefault();
 
-    // if(trade[0].id <= userState?.trading_stage)
+    if (trade[0].id <= userState?.trading_stage)
+      return toast.error("Please move to the next stage");
 
     if (trade[0].min > userState?.main_balance)
       return toast.error("insufficent fund,please fund account");
