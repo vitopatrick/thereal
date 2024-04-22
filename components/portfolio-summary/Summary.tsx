@@ -12,15 +12,23 @@ export default function Summary() {
     <div className="py-4 space-y-2">
       {/* header */}
       <h3 className="text-xl lg:text-2xl">Portfoilo Summary</h3>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
         {userState && (
           <>
             <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
-              <h4 className="text-neutral-200">Balance</h4>
-              <p className="text-2xl">{formatCurrency(userState.balance, 3)}</p>
+              <h4 className="text-neutral-400">Main Account</h4>
+              <p className="text-2xl">
+                {formatCurrency(userState.main_balance, 3)}
+              </p>
             </div>
             <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
-              <h4 className="text-neutral-200">Profit</h4>
+              <h4 className="text-neutral-400">Staking Account</h4>
+              <p className="text-2xl">
+                {formatCurrency(userState.staking_balance, 3)}
+              </p>
+            </div>
+            <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
+              <h4 className="text-neutral-400">Profit</h4>
               <p className="text-2xl">{formatCurrency(userState.profit, 3)}</p>
             </div>
           </>

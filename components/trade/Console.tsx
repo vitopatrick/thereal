@@ -20,6 +20,7 @@ import { TradingContext } from "@/context/TradingContext";
 interface Itrade {
   min: number;
   profit: number;
+  id: number;
 }
 
 const TradingConsole = () => {
@@ -35,13 +36,13 @@ const TradingConsole = () => {
   const { selectedCoin }: any = useContext(TradingContext);
   const { userState }: any = useFetchUser();
 
-  console.log(userState);
-
   // function to add Orders
   async function addOrders(e: any) {
     e.preventDefault();
 
-    if (trade[0].min > userState?.balance)
+    // if(trade[0].id <= userState?.trading_stage)
+
+    if (trade[0].min > userState?.main_balance)
       return toast.error("insufficent fund,please fund account");
 
     try {
@@ -51,8 +52,7 @@ const TradingConsole = () => {
       // update account
       const userRef = doc(store, "/users", `${state.email}`);
       await updateDoc(userRef, {
-        trading_account: increment(+trade[0].min),
-        balance: increment(-trade[0].min),
+        main_balance: increment(-trade[0].min),
         trading_stage: increment(+1),
       });
 

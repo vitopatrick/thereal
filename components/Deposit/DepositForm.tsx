@@ -37,7 +37,7 @@ const Form = () => {
   const [defaultCoin, setDefaultCoin] = useState<null | any>(null);
   const [showBarCode, setBarCode] = useState(false);
 
-  const id = user?.deposit_address ? user?.deposit_address : 1;
+  const id = user?.address ? user?.address : 1;
   let walletAddress: [] | any = getAddress(id);
 
   useMemo(() => {

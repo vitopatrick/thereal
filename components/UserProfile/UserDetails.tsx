@@ -50,7 +50,11 @@ const UsersDetails = ({
             {loading && <Skeleton className="h-4 w-[250px]" />}
             {!loading && (
               <h1 className="font-medium text-sm md:text-base text-paper">
-                {user?.trading_stage == 0 ? "LEVEL 1" : user?.trading_stage}
+                {user?.trading_stage == 1 ? (
+                  "LEVEL 1"
+                ) : (
+                  <p>{`LEVEL ${user?.trading_stage}`}</p>
+                )}
               </h1>
             )}
           </div>
