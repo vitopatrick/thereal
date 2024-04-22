@@ -60,7 +60,7 @@ const VolumeOrderTableItem = ({
   return (
     <>
       <div
-        className="flex items-center justify-between p-3 rounded hover:bg-neutral-600 transition ease-in"
+        className="flex items-center justify-between p-3 rounded hover:bg-neutral-800 transition ease-in"
         onClick={() => setShowModal(true)}
       >
         <div className="space-y-2 flex flex-col items-start">

@@ -28,28 +28,49 @@ export default function Summary() {
       </div>
       <h3 className="text-xl lg:text-2xl mt-8">Wallets</h3>
       {/* container */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {wallets && (
           <>
             {/* bitcoin */}
-            <div className="bg-stone-800 p-3 rounded-xl">
-              <h3>Bitcoin</h3>
-              <p>{wallets?.btc}</p>
+            <div className="bg-stone-800 p-3 rounded-xl flex gap-3 items-center">
+              <img
+                src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031"
+                alt="logo"
+                className="w-[15%]"
+              />
+
+              <div>
+                <h3>Bitcoin</h3>
+                <p>{wallets?.btc}</p>
+              </div>
             </div>
             {/* Ethereum */}
-            <div className="bg-stone-800 rounded-xl p-4">
-              <h3>Ethereum</h3>
-              <p>{wallets?.eth}</p>
+            <div className="bg-stone-800 rounded-xl p-4 flex gap-3 items-center">
+              <img src="/eth.png" alt="logo" className="w-[15%]" />
+              <div>
+                <h3>Ethereum</h3>
+                <p>{wallets?.eth}</p>
+              </div>
             </div>
             {/* Tron */}
-            <div className="bg-stone-800 rounded-xl p-4">
-              <h3>Tron</h3>
-              <p>{wallets?.trx}</p>
+            <div className="bg-stone-800 rounded-xl p-4 flex items-center gap-3">
+              <img src="/tron.png" alt="logo" className="w-[15%]" />
+              <div>
+                <h3>Tron</h3>
+                <p>{wallets?.trx}</p>
+              </div>
             </div>
-            {/* Solana */}
-            <div className="bg-stone-800 rounded-xl p-4">
-              <h3>Solana</h3>
-              <p> {wallets?.sol}</p>
+            {/* USDT */}
+            <div className="bg-stone-800 rounded-xl p-4 flex items-center gap-3">
+              <img
+                src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=031"
+                alt="logo"
+                className="w-[15%] rounded-full"
+              />
+              <div>
+                <h3>USDT</h3>
+                <p> {wallets?.usdt}</p>
+              </div>
             </div>
           </>
         )}

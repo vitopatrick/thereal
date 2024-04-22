@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Activity,
   ArrowRightLeft,
   BadgeDollarSign,
   CandlestickChart,
@@ -9,6 +8,7 @@ import {
   Diff,
   LogOut,
   Nfc,
+  Wallet,
 } from "lucide-react";
 import Link from "next/link";
 import { signOut } from "firebase/auth";
@@ -18,9 +18,9 @@ import { useRouter } from "next/navigation";
 export const links = [
   {
     id: 1,
-    name: "Activity",
+    name: "Wallet",
     link: "/dashboard",
-    icon: <Activity />,
+    icon: <Wallet />,
   },
   {
     id: 3,

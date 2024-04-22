@@ -73,7 +73,7 @@ export default function RegisterForm() {
           btc: 0,
           eth: 0,
           trx: 0,
-          sol: 0,
+          usdt: 0,
         },
       });
 
