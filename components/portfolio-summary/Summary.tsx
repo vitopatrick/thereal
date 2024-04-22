@@ -36,7 +36,7 @@ export default function Summary() {
               <img
                 src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031"
                 alt="logo"
-                className="w-[15%]"
+                className="lg:w-[15%] w-[8%]"
               />
 
               <div>
@@ -46,7 +46,11 @@ export default function Summary() {
             </div>
             {/* Ethereum */}
             <div className="bg-stone-800 rounded-xl p-4 flex gap-3 items-center">
-              <img src="/eth.png" alt="logo" className="w-[15%]" />
+              <img
+                src="/eth.png"
+                alt="logo"
+                className="lg:w-[15%] w-[8%] rounded-full"
+              />
               <div>
                 <h3>Ethereum</h3>
                 <p>{wallets?.eth}</p>
@@ -54,7 +58,11 @@ export default function Summary() {
             </div>
             {/* Tron */}
             <div className="bg-stone-800 rounded-xl p-4 flex items-center gap-3">
-              <img src="/tron.png" alt="logo" className="w-[15%]" />
+              <img
+                src="/tron.png"
+                alt="logo"
+                className="lg:w-[15%] w-[8%] rounded-full"
+              />
               <div>
                 <h3>Tron</h3>
                 <p>{wallets?.trx}</p>
@@ -65,7 +73,7 @@ export default function Summary() {
               <img
                 src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=031"
                 alt="logo"
-                className="w-[15%] rounded-full"
+                className="lg:w-[15%] w-[8%] rounded-full"
               />
               <div>
                 <h3>USDT</h3>
