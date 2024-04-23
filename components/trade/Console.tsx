@@ -11,6 +11,7 @@ import { useContext, useState } from "react";
 import { UserContext } from "@/context/UserAuthContext";
 import { store } from "@/config/firebase";
 import { useFetchUser } from "@/hooks/useFetchUser";
+import { useTransactions } from "@/hooks/useTransactions";
 import { toast } from "sonner";
 import { formatCurrency } from "@/lib/format";
 import TradingModal from "../trading-modal/TradingModal";
@@ -36,12 +37,16 @@ const TradingConsole = () => {
   const { selectedCoin }: any = useContext(TradingContext);
   const { userState }: any = useFetchUser();
 
+  // get all the transactions
+  const { transactions }: any = useTransactions("orders");
+
+  const canTrade = transactions.find(
+    (trans: any) => trans.tradeId == trade[0].id
+  );
+
   // function to add Orders
   async function addOrders(e: any) {
     e.preventDefault();
-
-    if (trade[0].id <= userState?.trading_stage)
-      return toast.error("Please move to the next stage");
 
     if (trade[0].min > userState?.main_balance)
       return toast.error("insufficent fund,please fund account");
@@ -52,32 +57,39 @@ const TradingConsole = () => {
 
       // update account
       const userRef = doc(store, "/users", `${state.email}`);
-      await updateDoc(userRef, {
-        main_balance: increment(-trade[0].min),
-        trading_stage: increment(+1),
-      });
 
-      // create Collection and then reload page or refresh page
-      await addDoc(orderRef, {
-        coin: selectedCoin,
-        amount: trade[0].min,
-        date: serverTimestamp(),
-        profit: trade[0].profit,
-        duration: "4 Days",
-        status: false,
-      });
+      if (canTrade == undefined) {
+        await updateDoc(userRef, {
+          main_balance: increment(-trade[0].min),
+          trading_stage: increment(+1),
+          previous_stage: increment(+1),
+        });
 
-      await fetch("/api/trade", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: state.email,
-          amount: trade[0].min,
+        // create Collection and then reload page or refresh page
+        await addDoc(orderRef, {
           coin: selectedCoin,
-        }),
-      });
+          amount: trade[0].min,
+          date: serverTimestamp(),
+          profit: trade[0].profit,
+          duration: "4 Days",
+          status: false,
+          id: trade[0].id,
+        });
+
+        await fetch("/api/trade", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: state.email,
+            amount: trade[0].min,
+            coin: selectedCoin,
+          }),
+        });
+      } else {
+        toast.error("You Can Not Perform this trade");
+      }
 
       router.refresh();
     } catch (error) {

@@ -36,6 +36,7 @@ export const useTransactions = (path: String | any) => {
               date: new Date(data.date.toDate()).toDateString(),
               id: doc.id,
               profit: data.profit ? data.profit : null,
+              tradeId: data.id ? data.id : null,
             });
             setTransactions(transactionsArray);
           });
