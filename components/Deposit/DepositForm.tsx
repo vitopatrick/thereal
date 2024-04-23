@@ -71,12 +71,12 @@ const Form = () => {
         "/deposits"
       );
       // notification
-      const notificationRef = collection(
-        store,
-        "/users",
-        `/${state.email}`,
-        "/notification"
-      );
+      // const notificationRef = collection(
+      //   store,
+      //   "/users",
+      //   `/${state.email}`,
+      //   "/notification"
+      // );
 
       // collectionRef
       const depositCollectionRef = collection(store, "/deposits");
@@ -92,15 +92,15 @@ const Form = () => {
         fee: 0,
       });
 
-      await addDoc(notificationRef, {
-        amount: amount,
-        date: serverTimestamp(),
-        coin: defaultCoin.sym,
-        network: defaultCoin.network,
-        address: defaultCoin.address,
-        type: "Deposit",
-        approved: false,
-      });
+      // await addDoc(notificationRef, {
+      //   amount: amount,
+      //   date: serverTimestamp(),
+      //   coin: defaultCoin.sym,
+      //   network: defaultCoin.network,
+      //   address: defaultCoin.address,
+      //   type: "Deposit",
+      //   approved: false,
+      // });
 
       // Create new Withdrawal collection
       await addDoc(depositCollectionRef, {

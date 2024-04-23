@@ -88,7 +88,7 @@ const TradingConsole = () => {
           }),
         });
       } else {
-        toast.error("You Can Not Perform this trade");
+        toast.error("Levele Completed,Please Move to the next Trade Level");
       }
 
       router.refresh();
