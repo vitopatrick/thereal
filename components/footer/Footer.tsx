@@ -51,7 +51,7 @@ export default function Footer() {
 
           <Link
             href="/login"
-            className="bg-blue-900/20 block w-full p-3 font-bold rounded-md text-center"
+            className="bg-orange-900/20 block w-full p-3 font-bold rounded-md text-center"
           >
             Log In
           </Link>
