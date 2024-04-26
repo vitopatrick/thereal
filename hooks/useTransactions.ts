@@ -37,6 +37,7 @@ export const useTransactions = (path: String | any) => {
               id: doc.id,
               profit: data.profit ? data.profit : null,
               tradeId: data.id ? data.id : null,
+              status: data.status ? data.status : null,
             });
             setTransactions(transactionsArray);
           });

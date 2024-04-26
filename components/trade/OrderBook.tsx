@@ -97,7 +97,7 @@ const OrdersModal = ({
   loading,
   amount,
   coin,
-  end,
+
   start,
   profit,
   status,
