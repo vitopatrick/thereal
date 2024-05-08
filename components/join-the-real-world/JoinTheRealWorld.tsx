@@ -24,7 +24,7 @@ export default function JoinTheRealWorld() {
           </div>
         </div>
         {/* image */}
-        <div className="my-8">
+        {/* <div className="my-8">
           <iframe
             width="957"
             height="551"
@@ -34,7 +34,7 @@ export default function JoinTheRealWorld() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
-        </div>
+        </div> */}
         {/* join now button */}
         <Link
           href="/register"
