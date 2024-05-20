@@ -24,17 +24,14 @@ export default function JoinTheRealWorld() {
           </div>
         </div>
         {/* image */}
-        {/* <div className="my-8">
-          <iframe
-            width="957"
-            height="551"
-            src="https://www.youtube.com/embed/oLl3C52XCzo"
-            title="The Real World"
-            // className="absolute w-full h-full left-0 top-0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div> */}
+        <div className="my-8">
+          <video controls poster="/tate.webp">
+            <source
+              src="https://firebasestorage.googleapis.com/v0/b/the-real-world-c1527.appspot.com/o/Welcome%20to%20The%20Real%20World.mp4?alt=media&token=61d54c5e-4796-4064-ae23-11291d316721"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         {/* join now button */}
         <Link
           href="/register"
