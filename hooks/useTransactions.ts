@@ -19,7 +19,7 @@ export const useTransactions = (path: String | any) => {
     const fetchTransactions = async () => {
       // create collectionRef
       const collectionRef = collection(store, "/users", `${user.email}`, path);
-      const q = query(collectionRef, orderBy("start_date", "desc"));
+      const q = query(collectionRef, orderBy("date", "desc"));
 
       const transactionsArray: any = [];
 
