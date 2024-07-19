@@ -21,7 +21,7 @@ export const stakingOptions = [
   },
   {
     id: 3,
-    range: "$500000 - $100,000,000",
+    range: "$500,000 - $100,000,000",
     duration: "150",
     min: 500000,
     plan: "BITCOIN",

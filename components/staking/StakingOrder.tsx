@@ -1,5 +1,5 @@
 import { formatCurrency } from "@/lib/format";
-import { useTransactions } from "@/hooks/useTransactions";
+import { useStaking } from "@/hooks/useStaking";
 
 const StakingOrder = () => {
   return (
@@ -15,7 +15,7 @@ const StakingOrder = () => {
 };
 
 const StakingTable = () => {
-  const { transactions, loading } = useTransactions("staking");
+  const { transactions, loading } = useStaking("staking");
 
   return (
     <>
@@ -30,8 +30,8 @@ const StakingTable = () => {
                 key={stake.amount + Math.random()}
                 plan={stake.plan}
                 amount={stake.amount}
-                startDate={stake.startDate}
-                profitDate={stake.profitDate}
+                startDate={stake.start_date}
+                profitDate={stake.profit_date}
                 network={stake.network}
                 profit={stake.profit}
               />

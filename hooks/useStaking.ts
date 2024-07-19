@@ -3,7 +3,7 @@ import { useState, useMemo, useContext } from "react";
 import { collection, onSnapshot, query, orderBy } from "firebase/firestore";
 import { store } from "@/config/firebase";
 
-export const useTransactions = (path: String | any) => {
+export const useStaking = (path: String | any) => {
   const [transactions, setTransactions] = useState<
     [{}] | null | undefined | any
   >([]);
@@ -19,25 +19,23 @@ export const useTransactions = (path: String | any) => {
     const fetchTransactions = async () => {
       // create collectionRef
       const collectionRef = collection(store, "/users", `${user.email}`, path);
-      const q = query(collectionRef, orderBy("start_date", "desc"));
 
       const transactionsArray: any = [];
 
       onSnapshot(
-        q,
+        collectionRef,
         (docs) => {
           docs.forEach((doc) => {
             const data = doc.data();
 
             transactionsArray.push({
-              coin: doc.data().coin,
-              approved: doc.data().approved,
+              network: data.network,
               amount: parseInt(data.amount),
-              date: new Date(data.date.toDate()).toDateString(),
+              plan: data.plan,
               id: doc.id,
               profit: data.profit ? data.profit : null,
-              tradeId: data.id ? data.id : null,
-              status: data.status ? data.status : null,
+              profit_date: data.profitDate,
+              start_date: data.start_date,
             });
             setTransactions(transactionsArray);
           });
