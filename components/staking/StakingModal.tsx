@@ -39,7 +39,7 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
       case "100%":
         return (profit = parseInt(amount) + parseInt(amount) * 1);
       default:
-        return (profit = parseInt(amount) + parseInt(amount) * 1.5);
+        return (profit = parseInt(amount) + parseInt(amount) * 2);
     }
   };
 

@@ -1,9 +1,9 @@
 export const stakingOptions = [
   {
     id: 1,
-    range: "$50,000 - $200,000",
-    duration: "30",
-    min: 50000,
+    range: "$20,000 - $200,000",
+    duration: "60",
+    min: 20000,
     plan: "BITCOIN",
     network: "BITCOIN",
     image: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
@@ -12,7 +12,7 @@ export const stakingOptions = [
   {
     id: 2,
     range: "$200,000 - $500,000",
-    duration: "70",
+    duration: "100",
     min: 200000,
     plan: "BITCOIN",
     network: "BITCOIN",
@@ -21,12 +21,12 @@ export const stakingOptions = [
   },
   {
     id: 3,
-    range: "$500,000 - $100,000,000",
-    duration: "150",
+    range: "$500,000 - $10,000,000",
+    duration: "200",
     min: 500000,
     plan: "BITCOIN",
     network: "BITCOIN",
     image: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031",
-    roi: "160%",
+    roi: "200%",
   },
 ];
