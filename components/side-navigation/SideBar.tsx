@@ -73,7 +73,7 @@ export default function SideBar() {
   };
 
   return (
-    <aside className="w-[220px] bg-stone-800 hidden text-white lg:block">
+    <aside className="w-[220px] bg-zinc-900 hidden text-white lg:block">
       <div className="flex flex-col gap-4">
         {links &&
           links.map((link) => (

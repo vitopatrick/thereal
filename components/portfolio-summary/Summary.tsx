@@ -11,32 +11,32 @@ export default function Summary() {
   return (
     <div className="py-4 space-y-2">
       {/* header */}
-      <h3 className="text-xl lg:text-2xl">Portfoilo Summary</h3>
+      <h3 className="text-lg lg:text-lg">Portfolio Summary</h3>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
         {userState && (
           <>
             <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
               <h4 className="text-neutral-400">Main Account</h4>
-              <p className="text-2xl">
+              <p className="text-xl">
                 {formatCurrency(userState.main_balance, 3)}
               </p>
             </div>
             <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
               <h4 className="text-neutral-400">Staking Account</h4>
-              <p className="text-2xl">
+              <p className="text-xl">
                 {formatCurrency(userState.staking_balance, 3)}
               </p>
             </div>
             <div className="bg-stone-800 p-4 rounded-2xl space-y-2">
               <h4 className="text-neutral-400">Profit</h4>
-              <p className="text-2xl">{formatCurrency(userState.profit, 3)}</p>
+              <p className="text-xl">{formatCurrency(userState.profit, 3)}</p>
             </div>
           </>
         )}
       </div>
-      <h3 className="text-xl lg:text-2xl mt-8">Wallets</h3>
+      <h3 className="text-lg lg:text-lg mt-8">Wallets</h3>
       {/* container */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-6">
         {wallets && (
           <>
             {/* bitcoin */}

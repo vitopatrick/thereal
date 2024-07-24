@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <>
       <UserProvider>
-        <div className="h-screen flex bg-stone-900 text-white">
+        <div className="h-screen flex bg-zinc-950 text-white">
           <SideBar />
           <div className="flex-1 min-h-0 overflow-y-scroll">
             <Header />
@@ -36,15 +36,3 @@ export default function RootLayout({
   );
 }
 
-// <main className="h-screen">
-//   {/* container*/}
-//   <div className="flex  h-screen">
-//     {/* side bar */}
-//     <SideBar />
-//     {/* main content */}
-//     <div className=" flex-1 min-h-0 overflow-y-scroll">
-//       <Header />
-//       {children}
-//     </div>
-//   </div>
-// </main>;
