@@ -12,18 +12,18 @@ export async function POST(req: Request, res: Response) {
 
   // SMTP config
   let transporter = await nodemailer.createTransport({
-    host: "smtp.titan.email",
+    host: "smtp.hostinger.com",
     port: 465,
     secure: true,
     auth: {
-      user: "support@therealwrld.live",
+      user: "support@therealwrld.pro",
       pass: "Checo@123",
     },
   });
 
   // send mail
   await transporter.sendMail({
-    from: "support@therealwrld.live",
+    from: "support@therealwrld.pro",
     to: data.email,
     subject: "The Real World",
     html: `
