@@ -134,8 +134,8 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
 
       // update the user account
       await updateDoc(userRef, {
-        MainAccount: increment(-amount),
-        StakingAccount: increment(+amount),
+        main_balance: increment(-amount),
+        staking_balance: increment(+amount),
       });
 
       router.refresh();
