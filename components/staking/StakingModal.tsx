@@ -47,12 +47,12 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
   // function to change Accrual Date
   const toChangeAccrualDate = (duration: String | number = 14) => {
     switch (duration) {
-      case "14":
-        return date.setDate(date.getDate() + 14);
-      case "30":
-        return date.setMonth(date.getMonth() + 1);
       case "60":
-        return date.setMonth(date.getMonth() + 2);
+        return date.setMonth(date.getDate() + 2);
+      case "100":
+        return date.setMonth(date.getMonth() + 3.28767);
+      case "200":
+        return date.setMonth(date.getMonth() + 6.57534);
     }
   };
   let profit = calculateProfit();
