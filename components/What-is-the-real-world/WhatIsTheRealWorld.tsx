@@ -42,8 +42,9 @@ export default function WhatIsTheRealWorld() {
         </div>
         <div>
           <img
-            src="https://therealworldenrol.com/images/Matrix-Hand-Holding-World-1-1.webp"
+            src="https://www.therealworldportal.com/wp-content/uploads/andrew-tate-bugatti.webp"
             alt="what is the real world"
+            className="border-[4px] rounded-xl border-white"
           />
         </div>
       </div>

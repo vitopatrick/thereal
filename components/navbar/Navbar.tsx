@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className=" w-[15%]">
             <img
-              src="https://therealworldenrol.com/images/Mask-group-1_1Mask-group-1.webp"
+              src="https://www.jointherealworld.com/revamp/images/the-real-world-logo_1the-real-world-logo.webp"
               alt="image"
             />
           </Link>

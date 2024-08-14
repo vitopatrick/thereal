@@ -37,7 +37,7 @@ export default function RealWorldFeatures() {
           </div>
           <div className="lg:w-1/2">
             <img
-              src="https://therealworldenrol.com/images/GAMIFYING-BUSINESS-MASTERY.webp"
+              src="https://www.therealworldportal.com/wp-content/uploads/gamifying-business-mastery.webp"
               alt="the first image"
             />
           </div>
@@ -57,7 +57,7 @@ export default function RealWorldFeatures() {
           </div>
           <div className="lg:w-[40%]">
             <img
-              src="https://therealworldenrol.com/images/Leveling-Up-Together.webp"
+              src="https://www.therealworldportal.com/wp-content/uploads/leveling-up-together.webp"
               alt="the first image"
             />
           </div>
@@ -77,7 +77,7 @@ export default function RealWorldFeatures() {
           </div>
           <div className="lg:w-[30%]">
             <img
-              src="https://therealworldenrol.com/images/Professors-1-1.webp"
+              src="https://www.therealworldportal.com/wp-content/uploads/the-real-world-professors.webp"
               alt="the last image"
             />
           </div>

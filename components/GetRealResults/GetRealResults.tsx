@@ -1,15 +1,15 @@
 const results = [
   {
     text: "We've built an ever-accessible portal to fully escape. Our own custom application. Available on every computer, phone or tablet",
-    img: "https://therealworldenrol.com/images/02_1.webp",
+    img: "https://www.therealworldportal.com/wp-content/uploads/the-real-world-app-400.webp",
   },
   {
     text: "Inside The Real World you will be surrounded by over 200,000 financially ambitious and health focused individuals.",
-    img: "https://therealworldenrol.com/images/01_1.webp",
+    img: "https://www.therealworldportal.com/wp-content/uploads/200k-students-400.webp",
   },
   {
     text: "Our community and mentorship program will equip you with all the resources needed to reach your financial goals.",
-    img: "https://therealworldenrol.com/images/03_1.webp",
+    img: "https://www.therealworldportal.com/wp-content/uploads/luxury-lifestyle-400.webp",
   },
 ];
 

@@ -10,10 +10,6 @@ export default function TeachingPhilosophy() {
           <h4 className="font-extrabold text-4xl lg:text-5xl ">
             Our Teaching <br /> Philosophy
           </h4>
-          <img
-            src="https://therealworldenrol.com/images/Gradient-Underline-1.webp"
-            alt="underline"
-          />
         </div>
         <div className="w-full flex-1 ml-4">
           <ul className="list-disc space-y-4 ">

@@ -16,12 +16,6 @@ export default function JoinTheRealWorld() {
               our professionally trained millionaire professors.
             </p>
           </div>
-          <div className="w-[10%] hidden lg:block">
-            <img
-              src="https://therealworldenrol.com/images/arrow-1.png"
-              alt="the real world"
-            />
-          </div>
         </div>
         {/* image */}
         <div className="my-8">

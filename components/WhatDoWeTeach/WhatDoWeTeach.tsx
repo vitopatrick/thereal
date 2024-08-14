@@ -7,20 +7,20 @@ const lessons = [
     subtitle: "The business models we teach are:",
     subImages: [
       {
-        url: "https://therealworldenrol.com/images/Copywriting.webp",
+        url: "https://www.therealworldportal.com/wp-content/uploads/copywriting-icon.webp",
         title: "Copywriting",
       },
       {
-        url: "https://therealworldenrol.com/images/freelancing_1.webp",
-        title: "Freelancing",
+        url: "https://www.therealworldportal.com/wp-content/uploads/client-acquisition-icon.webp",
+        title: "Client Acquisition",
       },
       {
-        url: "https://therealworldenrol.com/images/Ecommerce.webp",
+        url: "https://www.therealworldportal.com/wp-content/uploads/e-commerce-icon.webp",
         title: "Ecommerce",
       },
       {
-        url: "https://therealworldenrol.com/images/Artificial-Intelligence.webp",
-        title: "Artificial Inteligence",
+        url: "https://www.therealworldportal.com/wp-content/uploads/content-creation-icon.webp",
+        title: "Content Creation",
       },
     ],
     points: [
@@ -30,7 +30,7 @@ const lessons = [
       "Focused on new markets (AI)",
     ],
     mainImage:
-      "https://therealworldenrol.com/images/Choose-A-Skill-NEW-p-1080.png",
+      "https://www.therealworldportal.com/wp-content/uploads/learn-all-digital-skills.webp",
   },
   {
     title: "Proven Investment Strategies",
@@ -39,16 +39,17 @@ const lessons = [
       "Cutting edge strategies designed and catered to your personal risk and time preferences.",
     subImages: [
       {
-        url: "https://therealworldenrol.com/images/Cryptocurrency.webp",
+        url: "https://www.therealworldportal.com/wp-content/uploads/business-mastery-icon.webp",
         title: "Analysis",
       },
       {
-        url: "https://therealworldenrol.com/images/Stocks.webp",
-        title: "Stocks",
+        url: "https://www.therealworldportal.com/wp-content/uploads/defi-icon.webp",
+        title: "DeFi",
       },
     ],
 
-    mainImage: "https://therealworldenrol.com/images/Multiply-Your-Income.webp",
+    mainImage:
+      "https://www.therealworldportal.com/wp-content/uploads/modern-market-strategies.webp",
   },
   {
     title: "Automate Your Business",
@@ -56,16 +57,17 @@ const lessons = [
       "The final step is teaching you how to scale your business and outsource so you make money while you sleep.",
     subImages: [
       {
-        url: "https://therealworldenrol.com/images/Business-_-Finance.webp",
+        url: "https://www.therealworldportal.com/wp-content/uploads/markets-icon.webp",
         title: "Business & Finance",
       },
       {
-        url: "https://therealworldenrol.com/images/Mindset.webp",
+        url: "https://www.therealworldportal.com/wp-content/uploads/mindset-icon.webp",
         title: "Mindset",
       },
     ],
 
-    mainImage: "https://therealworldenrol.com/images/Scale-Your-Business.webp",
+    mainImage:
+      "https://www.therealworldportal.com/wp-content/uploads/automate-your-business.webp",
   },
 ];
 

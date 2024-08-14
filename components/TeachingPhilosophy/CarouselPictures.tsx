@@ -7,13 +7,13 @@ import {
 } from "../ui/carousel";
 
 const images = [
-  "https://therealworldenrol.com/images/13-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/14-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/15-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/13-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/17-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/18-gigapixel-art-scale-2_00x.webp",
-  "https://therealworldenrol.com/images/16-gigapixel-art-scale-2_00x.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-4.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-5.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-6.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-7.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-8.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-9.webp",
+  "https://www.therealworldportal.com/wp-content/uploads/main-testimonial-10.webp",
 ];
 
 export default function CarouselPictures() {
