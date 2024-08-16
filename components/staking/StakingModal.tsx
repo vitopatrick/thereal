@@ -48,7 +48,7 @@ const StakingModal = ({ visible, setVisible, data }: ModalProps) => {
   const toChangeAccrualDate = (duration: String | number = 14) => {
     switch (duration) {
       case "60":
-        return date.setMonth(date.getDate() + 2);
+        return date.setMonth(date.getMonth() + 2);
       case "100":
         return date.setMonth(date.getMonth() + 3.28767);
       case "200":
